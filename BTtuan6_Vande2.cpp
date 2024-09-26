@@ -94,9 +94,10 @@ float TinhBieuThuc(node &s, char bieuThuc[])
 	return pop(s);
 }
 
-int main (){
-	node st = NULL;
-	char bt[100] = {"5"," ","1","7"," ","3"," ","+"," ","*"," ","6"," ","-"," ","#"};
-	TinhBieuThuc(st,bt);
-	
+int main() {
+    node st = NULL;
+    char bt[] = "5 6 7 * 8 / + 6 - #";
+    float result = TinhBieuThuc(st, bt);
+    cout << "Ket qua: " << result << endl;
+    return 0;
 }
